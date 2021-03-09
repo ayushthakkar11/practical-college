@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quiz</title>
+    <script>
+         let marks=0;
+            document.addEventListener('DOMContentLoaded',function (){
+                console.log("content loaded");
+                document.querySelector("form").onsubmit=function (){
+                    console.log("inside submit function");
+                    if(document.querySelector("#first").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#second").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#third").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#four").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#five").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                     if(document.querySelector("#six").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#seven").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#eight").checked==true)
+                    {
+                        marks +=1;
+
+                    }
+                    if(document.querySelector("#nine").checked==true)
+                                        {
+                                            marks +=1;
+
+                                        }
+                    if(document.querySelector("#ten").checked==true)
+                                        {
+                                            marks +=1;
+
+                                        }
+
+                    document.querySelector("h4").innerHTML=` Your Marks Are : ${marks} /10`;
+                    return false;
+                }
+            })
+    </script>
+    <style>
+        body{
+            background-color: blue;
+        }
+        #submit{
+            width: 110px;
+            height: 70px;
+            font-family: Arial;
+            font-size: 30px;
+            background-color: blue;
+        }
+
+    </style>
+
+</head><body >
+
+<form>
+<font size="17">
+<pre>
+    <center>India Quiz</center>
+1.What Indian city is the capital of two states?
+    <input type="radio" name="1" >mumbai
+    <input type="radio" name="1" >chennai
+    <input type="radio" name="1" >kolkata
+    <input type="radio" name="1" id="first" >chandigarh
+2.How many countries border India?
+    <input type="radio" name="2" id="second">6
+    <input type="radio" name="2" >3
+    <input type="radio" name="2" >2
+    <input type="radio" name="2" >8
+3.What is the capital of Gujarat?
+    <input type="radio" name="3" id="third">Gandhinagar
+    <input type="radio" name="3" >Ahmedabad
+    <input type="radio" name="3" >Bopal
+    <input type="radio" name="3" >Delhi
+4.Who was the president of India in 2009?
+    <input type="radio" name="4" >Jawaharlal Nehru
+    <input type="radio" name="4" id="four">Pratibha Patil
+    <input type="radio" name="4" >Govind Singh
+    <input type="radio" name="4" >Indira Gandhi
+5.What is India’s smallest state by area?
+    <input type="radio" name="5" >Kerala
+    <input type="radio" name="5" >Uttar Pradesh
+    <input type="radio" name="5" id="five">Goa
+    <input type="radio" name="5" >Puducherry
+6.Which of the following countries does not share a land border with India?
+    <input type="radio" name="6" >Bhutan
+    <input type="radio" name="6" >Myanmar
+    <input type="radio" name="6" id="six">Afghanistan
+    <input type="radio" name="6" >China
+7.Which Indian city is home to the Taj Mahal?
+    <input type="radio" name="7" id="seven">Agra
+    <input type="radio" name="7" >Delhi
+    <input type="radio" name="7" >Mumbai
+    <input type="radio" name="7" >Gujarat
+8.Which of these bodies of water does not border India?
+    <input type="radio" name="8" >Bay of Bengal
+    <input type="radio" name="8" id="eight">Red Sea
+    <input type="radio" name="8" >Arabian Sea
+    <input type="radio" name="8" >Indian Ocean
+9.Delhi is located along what river?
+    <input type="radio" name="9" >the Nile
+    <input type="radio" name="9" id="nine">the Yamuna
+    <input type="radio" name="9" >the Brahmaputra
+    <input type="radio" name="9" >the Ganges
+10.When is India’s Independence Day?
+    <input type="radio" name="10" id="ten">August 15
+    <input type="radio" name="10" >January 1
+    <input type="radio" name="10" >July 14
+    <input type="radio" name="10" >October 3
+            <h4> </h4>
+            <input type="submit" id="submit">
+
+</pre>
+</font>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>onclick function</title>
+    <script>
+
+            document.addEventListener('DOMContentLoaded',()=>{
+                document.querySelector("form").onsubmit=()=>{
+                    let a=document.querySelector("#name").value;
+                    document.querySelector("h1").innerHTML=`Hello ${a}`;
+                    return false;
+                }
+            })
+
+    </script>
+</head>
+<body>
+
+<form>
+    <h1></h1>
+    <input type="text" id="name">
+    <input type="submit" >
+
+</form>
+</body>
+</html>
