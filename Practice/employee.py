@@ -6,8 +6,9 @@ class employee:
     salary=0;
 
 employee_detail=[]
-no=int(input("How many employee details you want to enter?"))
-for i in range(no):
+n="yes"
+
+while n!="no":
     e1=employee()
     e1.id=int(input("Enter id="))
     e1.name=input("Enter name=")
@@ -15,6 +16,7 @@ for i in range(no):
     e1.address=input("Enter address=")
     e1.salary=int(input("Enter salary="))
     employee_detail.append(e1)
+    n=input("Do you want to continue?(yes/no)")
 
 for e1 in employee_detail:
     print("id=",e1.id)
