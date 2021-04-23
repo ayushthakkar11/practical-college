@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center><h1>181130116107</h1></center>
+    <script>
+       function factorial(n){
+           if(n == 0 || n == 1){
+               return 1;
+
+           }
+           else{
+               return n* factorial(n-1);
+           }
+
+       }
+       let n = prompt("eneter number");
+       ans = factorial(n);
+       document.write("the factorial is " + ans);
+
+
+       const number = parseInt(prompt("enter number"));
+       let n1= 0 , n2 = 1, nextTerm;
+       document.write(`<br>`);
+       document.write("fibonacci series");
+
+       for( let i = 1 ; i <= number ; i++){
+           nextTerm = n1 + n2;
+           n1 = n2;
+           n2 = nextTerm;
+           document.write(`<br>`);
+           document.write(nextTerm);
+       }
+    </script>
+
+</body>
+</html>
